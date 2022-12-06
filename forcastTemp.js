@@ -1,4 +1,4 @@
-"strict";
+"use strict";
 /*Developer Skills & Editor Setup
 Coding Challenge #1
 Given an array of forecasted maximum temperatures, the thermometer displays a 
@@ -18,16 +18,16 @@ const maxTemprature = [17, 21, 23];
 const minTemprature = [12, 5, -5, 0, 4];
 const tempss = maxTemprature.concat(minTemprature);
 
-console.log(`...${tempss[0]}°C ... ${tempss[1]}°C ... ${tempss[2]}°C ... ${tempss[3]}°C ... ${tempss[4]}°C ... ${tempss[5]}°C ... ${tempss[5]}°C ... ${tempss[6]}°C ... ${tempss[7]}°C ...`);
-[=-]
+console.log(
+  `...${tempss[0]}°C ... ${tempss[1]}°C ... ${tempss[2]}°C ... ${tempss[3]}°C ... ${tempss[4]}°C ... ${tempss[5]}°C ... ${tempss[5]}°C ... ${tempss[6]}°C ... ${tempss[7]}°C ...`
+);
+
 function printForcast(arr) {
-    let str = "";
+  let str = "";
   for (let i = 0; i < arr.length; ++i) {
-   str+=`${arr[i]}°C on day ${i+1}, ... ` 
-   
+    str += `${arr[i]}°C on day ${i + 1}, ... `;
   }
   console.log("..." + str);
-  
 }
 
-printForcast(tempss)
+printForcast(tempss);
